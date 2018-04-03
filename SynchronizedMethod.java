@@ -25,7 +25,7 @@ class SynchronizedMethod	{
 	public static void main(String... args)	{
 	Display d1 = new Display();
 	MyThread t1 = new MyThread(d1,"Arif");
-	MyThread t2 = new MyThread(d1,"Shirley");
+	MyThread t2 = new MyThread(d1,"XYZ");
 	t1.start();
 	t2.start();
 	}
