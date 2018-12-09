@@ -1,0 +1,18 @@
+import java.util.NavigableSet;
+import java.util.TreeSet;
+import java.util.List;
+import java.util.SortedSet;
+public class NavigableSetDemo
+{
+	public static void main(String... arhs)
+	{
+		NavigableSet ns = new TreeSet();
+		ns.add(3);
+		ns.add(5);
+		ns.add(7);
+		ns.add(3);
+		ns.add(8);
+		ns.add(4);
+		System.out.println(ns.headSet(7));
+	}
+}

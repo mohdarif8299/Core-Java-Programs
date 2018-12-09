@@ -1,0 +1,12 @@
+import java.util.*;
+public class TreeSetDemo
+{
+	public static void main(String[] args)
+	{
+		TreeSet ts = new TreeSet();
+		ts.add(101.21);
+		ts.add("hello");
+		ts.add(121);
+		System.out.println(ts);
+	}
+}
