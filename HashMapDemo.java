@@ -1,33 +1,21 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Iterator;
+import java.util.Set;
 public class HashMapDemo
 {
-	public  static void main(String[] srhx)
-	{
-		HashMap m = new HashMap();
-		Test t1 = new Test("Hello");
-		Test t2 = new Test("World");
-		m.put(t1,"First");
-		m.put(t2,"Second");
-		System.out.println(m);
-		System.out.println(m.size());
-		System.out.println(t1.equals(t2));
-		System.out.println(t1);
-		System.out.println(t2);
-	}
-}
-class Test
-{
-	String newS;
-	Test (String s)
-	{
-		this.newS = s;
-	}
-	public boolean equals(Object o)
-	{
-		return true;
-	}
-	public int hashCode()
-	{
-		return 9;
+	static String name[] = {"ARIF","ANAS","IRFAN","SHAHBAZ","SHAHNAWAZ"};
+	static String id[] = {"101","102","103","104","103"};
+	public static void main(String[] args) {
+		  Map<String,String> hm = new HashMap<String,String>();
+		 for (int i=0;i<5;i++)
+		 {
+			hm.put(id[i],name[i]);
+		 }
+		 for(Map.Entry m:hm.entrySet()) {
+			    String s1 = (String)m.getKey();
+				String s2 = (String)m.getValue();
+				 System.out.println(s1+" "+s2);
+		 }
 	}
 }
